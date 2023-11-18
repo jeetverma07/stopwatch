@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: black;
+  color: #555;
+}
+.main {
+  padding: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  width: 80vw;
+  height: 55rem;
+  color: rgb(0, 200, 255);
+  background-color: rgba(36, 0, 36, 0.954);
+  border-radius: 2%;
+  text-align: center;
+}
+.time {
+  margin-top: 5rem;
+  font-size: 17rem;
+}
+.btn {
+  margin: 5rem 3rem;
+  font-size: 3rem;
+  width: 13vw;
+  height: 5rem;
+  background-color: rgb(255, 5, 255);
+  border: none;
+  border-radius: 3rem;
+  transition: all 0.2s ease, transform 0.2s;
+}
+.btn:active {
+  background-color: green;
+  transform: translateY(2px);
+}
+.mhs {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+}
+
+@media (max-width: 945px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 740px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 590px) {
+  html {
+    font-size: 35%;
+  }
+  .main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  html {
+    font-size: 28%;
+  }
+}
+
+@media (max-width: 355px) {
+  html {
+    font-size: 22%;
+  }
+}
+@media (max-width: 260px) {
+  html {
+    font-size: 15%;
+  }
+}
